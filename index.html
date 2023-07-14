@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>CRUDS</title>
+</head>
+<!-- Start Form PART  -->
+
+<body class="bg-success text-white">
+    <div class="container">
+        <div class="w-75 mx-auto mb-5">
+            <h1 class="mb-5">Project Mangement System</h1>
+            <div class="form-group">
+                <label for="productName" class="mb-1">productName:</label>
+                <input type="text" id="productName" class="form-control mb-3">
+            </div>
+            <div class="form-group">
+                <label for="projectPrice" class="mb-1">projectPrice:</label>
+                <input type="number" id="projectPrice" class="form-control mb-3">
+            </div>
+            <div class="form-group">
+                <label for="productCategory" class="mb-1">productCategory:</label>
+                <input type="text" id="productCategory" class="form-control mb-3">
+            </div>
+            <div class="form-group">
+                <label for="projectDesc" class="mb-1">projectDesc:</label>
+                <textarea name="projectDesc" class="form-control mb-3" id="projectDesc"></textarea>
+            </div>
+            <button class="btn btn-primary mb-4" id="addProduct">Add Product</button>
+            <button class="btn btn-warning mb-4" id="updateProduct">Update Product</button>
+            <div class="form-group">
+                <h3>Search ....</h3>
+                <input type="text" class="form-control" id="">
+            </div>
+        </div>
+    </div>
+    <!-- End Form PART  -->
+    <!-- Start Table PART  -->
+    <div class="container">
+        <table class="table w-75 mx-auto text-center">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Desc</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="productRow">
+
+            </tbody>
+        </table>
+    </div>
+    <!-- End Table PART  -->
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
